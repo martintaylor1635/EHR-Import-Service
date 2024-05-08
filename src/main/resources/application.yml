@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: EHR Import Service
+  threads:
+    virtual:
+      enabled: true
