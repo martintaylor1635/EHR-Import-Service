@@ -1,14 +1,14 @@
 package dev.martintaylor.ehrimportservice.listener;
 
-import dev.martintaylor.ehrimportservice.event.UploadFailureEvent;
+import dev.martintaylor.ehrimportservice.event.UploadCompleteEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 @Component
-final class UploadFailureEventListener {
+public final class UploadCompleteEventListener {
     @EventListener
-    private void onUploadFailureEvent(@NonNull UploadFailureEvent event) {
+    private void onUploadComplete(@NonNull UploadCompleteEvent event) {
         System.out.println(event);
     }
 }
