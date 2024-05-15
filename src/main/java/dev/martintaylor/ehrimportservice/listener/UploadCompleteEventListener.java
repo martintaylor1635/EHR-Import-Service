@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public final class UploadCompleteEventListener {
     @EventListener
-    private void onUploadComplete(@NonNull UploadCompleteEvent event) {
+    private void onUploadCompleteEvent(@NonNull UploadCompleteEvent event) {
         System.out.println(event);
     }
 }
