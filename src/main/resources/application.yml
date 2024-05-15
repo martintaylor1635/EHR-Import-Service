@@ -4,3 +4,5 @@ spring:
   threads:
     virtual:
       enabled: true
+  aop:
+    auto: true
